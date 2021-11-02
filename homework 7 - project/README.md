@@ -1,6 +1,6 @@
 ## Repository of Heart Disease predictions service
 
-This service was created as Midterm Project of ml-zoomcamp course conducted by Alexey Grigorev (https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp)
+This service was created as Midterm Project of ml-zoomcamp course
 
 ### Context
 
@@ -10,21 +10,12 @@ People with cardiovascular disease or who are at high cardiovascular risk (due t
 
 ### Attribute Information
 
-* Age: age of the patient [years]
-* Sex: sex of the patient [M: Male, F: Female]
-* ChestPainType: chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]
-* RestingBP: resting blood pressure [mm Hg]
-* Cholesterol: serum cholesterol [mm/dl]
-* FastingBS: fasting blood sugar [1: if FastingBS > 120 mg/dl, 0: otherwise]
-* RestingECG: resting electrocardiogram results [Normal: Normal, ST: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), LVH: showing probable or definite left ventricular hypertrophy by Estes' criteria]
-* MaxHR: maximum heart rate achieved [Numeric value between 60 and 202]
-* ExerciseAngina: exercise-induced angina [Y: Yes, N: No]
-* Oldpeak: oldpeak = ST [Numeric value measured in depression]
-* ST_Slope: the slope of the peak exercise ST segment [Up: upsloping, Flat: flat, Down: downsloping]
-* HeartDisease: output class [1: heart disease, 0: Normal]
+![image](https://user-images.githubusercontent.com/53815806/139814327-4455227a-cbf1-47cb-8016-a187d947c729.png)
+![image](https://user-images.githubusercontent.com/53815806/139814411-29238c49-93b6-4346-b2ee-86bb3bbb791f.png)
+
 
 ### Source
-https://www.kaggle.com/fedesoriano/heart-failure-prediction
+https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
 
 
 ## Notes
@@ -44,11 +35,3 @@ to run it
 ```
 docker run --rm -it -p 9696:9696 heartdisease-prediction:latest
 ```
-
-
-### Cloud deployment
-
-This project was deployed to Heroku cloud.
-To deploy this project you don't need any additional code, just create file Procfile with 1 line: ```web: gunicorn predict:app``` and follow the official guide to push this repo to Heroku - https://devcenter.heroku.com/articles/git
-
-In predict_test.ipynb Jupyter notebook you can find how to test the service endpoint.
