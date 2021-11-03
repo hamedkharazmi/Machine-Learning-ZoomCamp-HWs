@@ -17,10 +17,6 @@ People with cardiovascular disease or who are at high cardiovascular risk (due t
 ### Source
 https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
 
-
-## Notes
-Requirements for the project are described here https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp/07-midterm-project
-
 ### Dependency and enviroment management
 Pipenv is used as python virtual environment.
 You can install all requirements with command ```pipenv install``` in the project directory.
@@ -35,3 +31,5 @@ to run it
 ```
 docker run --rm -it -p 9696:9696 heartdisease-prediction:latest
 ```
+
+The project is now deployed on heroku cloud servers and to test it just run the file predict_test.ipynb. Or you can just send json data into the link: https://heart-disease-pred-service.herokuapp.com/predict and get the results.
