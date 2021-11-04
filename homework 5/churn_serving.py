@@ -15,7 +15,6 @@ def predict_single(dv, model, customer):
     prediction = model.predict_proba(custome_data)[:,1]
     return prediction[0]
 
-
 @app.route('/predict',methods = ['POST'])
 def predict():
     customer = request.get_json()
