@@ -19,7 +19,18 @@ https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
 
 ### Dependency and enviroment management
 Pipenv is used as python virtual environment.
-You can install all requirements with command ```pip install -r requirements.txt``` in the project directory.
+You can install all requirements with command ```pipenv install``` in the project directory.
+After installing the required libraries we can run the project in the virtual environment with ```pipenv shell``` command.
+
+### Containerization
+To build docker image use command
+```
+docker build -t heartdisease-prediction .
+```
+to run it
+```
+docker run --rm -it -p 9696:9696 heartdisease-prediction:latest
+```
 
 ### Run the Model
-The project is now deployed on heroku cloud servers and to test it just run the file predict_test.ipynb. Or you can just send json data into the link: https://heart-disease-pred-service.herokuapp.com/predict and get the results.
+The project is now deployed on heroku cloud servers and to test it just run the file ```predict_test.ipynb```. Or you can just send json data into the link: https://heart-disease-pred-service.herokuapp.com/predict and get the results.
