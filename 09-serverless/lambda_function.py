@@ -4,7 +4,6 @@ from PIL import Image
 import numpy as np
 import tflite_runtime.interpreter as tflite
 
-
 def download_image(url):
     with request.urlopen(url) as resp:
         buffer = resp.read()
