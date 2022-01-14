@@ -3,7 +3,7 @@
 
 import requests
 
-url = 'http://localhost:8080/churn'
+url = 'http://localhost:8080/churn '
 
 customer_id = 'xyz-123'
 customer = {
