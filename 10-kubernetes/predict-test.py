@@ -12,7 +12,7 @@ customer = {
     "partner": "yes",
     "dependents": "no",
     "phoneservice": "no",
-    "multiplelines": "no_phone_service",
+    "multiplelines": "no_phone_service ",
     "internetservice": "dsl",
     "onlinesecurity": "no",
     "onlinebackup": "yes",
